@@ -21,6 +21,7 @@ public class euro extends VBox implements observer{
     public euro(subject subject) {
         textField = new TextField("Euro");
         button = new Button("Update");
+        getChildren().setAll(textField,button);
         setAlignment(Pos.CENTER);
         setSpacing(10);
         button.setOnAction(e->{

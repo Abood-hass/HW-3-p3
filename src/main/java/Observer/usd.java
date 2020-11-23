@@ -22,6 +22,7 @@ public class usd extends VBox implements observer{
     public usd(subject subject) {
         textField = new TextField("USD Balance");
         button = new Button("Update");
+        getChildren().setAll(textField,button);
         setAlignment(Pos.CENTER);
         setSpacing(10);
         button.setOnAction(e->{

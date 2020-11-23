@@ -22,6 +22,7 @@ public class jd extends VBox implements observer{
     public jd(subject subject) {
         textField = new TextField("JD Balance");
         button = new Button("Update");
+        getChildren().setAll(textField,button);
         setAlignment(Pos.CENTER);
         setSpacing(10);
         button.setOnAction(e->{
